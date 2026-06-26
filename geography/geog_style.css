@@ -176,3 +176,19 @@ button {
     width: 50px;
     filter: invert(90%) sepia(99%) saturate(10000%) hue-rotate(215deg)
 }
+
+@media (max-width: 500px){
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .card{
+        width: 90%;
+        max-width: 400px;
+    }
+
+}

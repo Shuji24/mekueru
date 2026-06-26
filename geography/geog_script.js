@@ -52,12 +52,22 @@ function renderCards(){
     const selectedCategory =
         document.getElementById("categorySelect").value;
 
-    let filteredWords =
-        selectedCategory === "all"
-        ? [...words]
-        : words.filter(
-            word => word.category === selectedCategory
-        );
+    const selectedLevel =
+        document.getElementById("levelSelect").value;
+
+    let filteredWords = words.filter(word => {
+    
+        const categoryMatch =
+            selectedCategory === "all"
+            || word.category === selectedCategory;
+    
+        const levelMatch =
+            selectedLevel === "all"
+            || word.level == selectedLevel;
+    
+        return categoryMatch && levelMatch;
+    
+    });
 
     if(isShuffled){
         shuffleArray(filteredWords);
@@ -190,6 +200,10 @@ document
 
 document
     .getElementById("categorySelect")
+    .addEventListener("change", renderCards);
+
+document
+    .getElementById("levelSelect")
     .addEventListener("change", renderCards);
 
 renderCards();

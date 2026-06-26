@@ -2,6 +2,7 @@ const words = [
     {
         category: "地図",
         category_eng: "map",
+        level: 1,
         desc: "角度を正しく表現した地図投影法",
         hintImage: "images/mercator.png",
         hintText: "",
@@ -10,6 +11,7 @@ const words = [
     {
         category: "地図",
         category_eng: "map",
+        level: 1,
         desc: "面積を正しく表現した地図投影法",
         hintImage: "images/mollweide.png",
         hintText: "",
@@ -18,15 +20,52 @@ const words = [
     {
         category: "地図",
         category_eng: "map",
+        level: 1,
         desc: "距離・方位を正しく表現した地図投影法",
         hintImage: "images/azimuthal equidistant.png",
         hintText: "",
         answer: "正距方位図法"
     },
-// 1②の右側(バビロニアの世界地図とか)やってない
     {
         category: "地図",
         category_eng: "map",
+        level: 2,
+        desc: "バビロニアの世界地図のうち、<br>①中央に南流する川の名前は？<br>②中央の円盤、③周囲の帯が意味するものは？",
+        hintImage: "images/babylonia.jpg",
+        hintText: "",
+        answer: "①ユーフラテス川<br>②大地<br>③環海",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "地球球体説が広まった後、プトレマイオスの世界地図にあった、当時初めての物は？",
+        hintImage: "images/ptolemy.jpg",
+        hintText: "",
+        answer: "緯線・経線",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "大地はノアの子孫が３分割したとされるTOマップは、何の世界観が反映された地図？",
+        hintImage: "images/to.jpg",
+        hintText: "",
+        answer: "キリスト教",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 3,
+        desc: "メルカトルの世界地図は、どのような時代にどのような目的で作られた？",
+        hintImage: "",
+        hintText: "角度が正しい",
+        answer: "大航海時代に、航海用の、角度が正確な地図を作るため。",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
         desc: "孝徳天皇が、国郡の境界の確定を命じたのは何の時？",
         hintImage: "",
         hintText: "646年",
@@ -35,6 +74,7 @@ const words = [
     {
         category: "地図",
         category_eng: "map",
+        level: 1,
         desc: "東大寺の建設に尽力した行基が作成した地図",
         hintImage: "images/gyouki.jpg",
         hintText: "江戸期まで全国地図の範とされた地図",
@@ -43,6 +83,7 @@ const words = [
     {
         category: "地図",
         category_eng: "map",
+        level: 1,
         desc: "17世紀末に活躍した浮世絵師の石川流宣が作成した地図",
         hintImage: "images/ryuusenzu.png",
         hintText: "色彩豊か、各国の記事内容も豊かで民間に広く流布した地図",
@@ -51,33 +92,522 @@ const words = [
     {
         category: "地図",
         category_eng: "map",
+        level: 1,
         desc: "長久保赤水が作成した地図",
         hintImage: "images/sekisuizu.png",
         hintText: "日本地図として初めて経緯線が入った地図",
         answer: "改正日本輿地路程全図"
     },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 1,
+        desc: "伊能忠敬が中心となって作った日本地図",
+        hintImage: "",
+        hintText: "",
+        answer: "大日本沿海輿地全図<br>(だいにっぽんえんかいよちぜんず)",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "WW2中、日本が行った、地図上の軍事施設の抹消による攻撃目標の攪乱",
+        hintImage: "",
+        hintText: "",
+        answer: "戦時改描",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "巨大な塔から電波を受信し、自分の位置を計測するシステム",
+        hintImage: "images/loranc.avif",
+        hintText: "航空機や船舶が利用した、自分の位置を把握できるシステム",
+        answer: "ロランC",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 1,
+        desc: "米国が運用する、衛星から信号を受け取り自分の位置を把握するシステム",
+        hintImage: "",
+        hintText: "カーナビやスマフォの地図アプリに活用される、自分の位置を把握できるシステム",
+        answer: "GPS",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "地理的位置を手掛かりに、地理情報を総合的に管理・加工し、視覚的に表示し、高度な分析や判断を可能にするシステム",
+        hintImage: "images/gis.png",
+        hintText: "",
+        answer: "地理情報システム(GIS)",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 3,
+        desc: "GISの活用例",
+        hintImage: "images/gis2.png",
+        hintText: "",
+        answer: "都市計画・防災・商圏分析・観光・交通",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "国土地理院が整備する総合的な地図情報",
+        hintImage: "",
+        hintText: "ネット上では地理院地図として利用可能",
+        answer: "数値地図",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 1,
+        desc: "様々な地理情報をまとめて記載した地図",
+        hintImage: "images/general.png",
+        hintText: "例) 地理院地図・地形図",
+        answer: "一般図",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 1,
+        desc: "特定の地理情報に注目して表現した地図",
+        hintImage: "images/thematic.png",
+        hintText: "活断層図・色別標高図",
+        answer: "主題図",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 1,
+        desc: "主題図のうち、測地データや統計データを可視化したもの",
+        hintImage: "",
+        hintText: "ドットマップ・等値線図・流線図・図形表現図・カルトグラム・階級区分図・メッシュマップ",
+        answer: "統計地図",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "数量を点で表し、分布状況を示した統計地図",
+        hintImage: "images/dot.jpg",
+        hintText: "",
+        answer: "ドットマップ",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "等しい数位の地点を線で結んだ統計地図",
+        hintImage: "images/isopleth.jpg",
+        hintText: "",
+        answer: "等値線図",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "物や人の移動を矢印で示し、量を太さで表した統計地図",
+        hintImage: "images/flow.jpg",
+        hintText: "",
+        answer: "流線図",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "円や棒などの図形の大きさで数量を表した統計地図",
+        hintImage: "images/geometric-symbol.jpg",
+        hintText: "",
+        answer: "図形表現図",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "地域を変形させて数量を表した統計地図",
+        hintImage: "images/cartogram.jpg",
+        hintText: "",
+        answer: "カルトグラム",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "地域ごとの数値を複数の階級に区分し、濃淡などで表した統計地図",
+        hintImage: "images/choropleth.jpg",
+        hintText: "",
+        answer: "階級区分図",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 2,
+        desc: "地域を当面積の区画に分け、各メッシュを単位として数量を表した地図",
+        hintImage: "images/mesh.png",
+        hintText: "相対分布図の1つ",
+        answer: "メッシュマップ",
+    },
+    {
+        category: "地図",
+        category_eng: "map",
+        level: 3,
+        desc: "階級区分図はどのような物の表現には適さないか",
+        hintImage: "images/choropleth.jpg",
+        hintText: "",
+        answer: "統計数値の実数の表現には適さず、相対分布図として用いる。",
+    },
 
     {
         category: "大地形",
         category_eng: "l_terrain",
-        desc: "",
+        level: 1,
+        desc: "小縮尺の地図で表現される地形",
         hintImage: "",
-        hintText: "",
-        answer: ""
+        hintText: "例) 大陸・大洋・大山脈・海溝",
+        answer: "大地形"
     },
-    
     {
-        category: "小地形",
-        category_eng: "s_terrain",
-        desc: "",
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "地球内部から生み出される、大地形を形成する力",
         hintImage: "",
         hintText: "",
-        answer: ""
+        answer: "内的営力"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "地殻に褶曲が生じ、土砂が堆積された後、隆起によって山脈が形成されたという説(現在では否定)",
+        hintImage: "images/tikosya.jpg",
+        hintText: "アパラチア山脈での研究から構築された説",
+        answer: "地向斜説"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "ウェゲナーが提唱した大陸移動説では、現在の大陸は昔はどうだった？",
+        hintImage: "",
+        hintText: "大西洋を挟む大陸の海岸線・化石の分布などから提唱",
+        answer: "超大陸パンゲア"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "精密な海底探査をおこなう装置<br>これにより海嶺・海溝が発見された。",
+        hintImage: "images/stripe.jpg",
+        hintText: "これにより同年代の海洋底が海嶺から等距離に分布していることも判明",
+        answer: "SONAR"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "マントル対流によって中央海嶺で高温物質が湧き出し、新しい海底となって海嶺の両側に広がってゆくとする学説",
+        hintImage: "images/stripe.jpg",
+        hintText: "",
+        answer: "海洋底拡大説"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "地球表面は、十数枚のプレートに覆われており、それらが移動する結果として多様な地形の形成が生じるとする考え方",
+        hintImage: "images/plate_tectonics.png",
+        hintText: "",
+        answer: "プレートテクトニクス"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "移動方向・速度の異なるプレートの境界で、地殻変動が盛んな所",
+        hintImage: "images/plate_tectonics.png",
+        hintText: "例) アルプス・ヒマラヤ造山帯、環太平洋造山帯",
+        answer: "変動帯(新規造山帯)"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "海嶺で、マントル由来の高温物質が沸き上がり、プレートが発散してできる変動帯",
+        hintImage: "images/spread.avif",
+        hintText: "例) アイスランド、アフリカ大地溝帯",
+        answer: "広がる境界"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "海溝で、重くなった海洋プレートが大陸プレートに沈み込んでできる変動帯",
+        hintImage: "images/narrow.jpg",
+        hintText: "例) ヒマラヤ山脈、熱海",
+        answer: "狭まる境界"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "狭まる境界のうち、①大陸と海洋の境界は？②大陸と大陸の境界は？",
+        hintImage: "",
+        hintText: "",
+        answer: "①沈み込み帯<br>②衝突帯"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "プレート同士が左右にずれてすれ違う変動帯",
+        hintImage: "images/transform.jpg",
+        hintText: "例) サンアンドレアス断層",
+        answer: "すれ違う境界<br>(トランスフォーム断層)"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "プレート移動の原動力であるマントルの、どの部分に流動性があるのか。",
+        hintImage: "images/asenos.webp",
+        hintText: "マントル上部",
+        answer: "アセノスフェア"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "地殻に引っ張る力が働いて形成される断層",
+        hintImage: "images/normal_fault",
+        hintText: "",
+        answer: "正断層"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "地殻に押し潰す力が働いて形成される断層",
+        hintImage: "images/reverse_fault",
+        hintText: "",
+        answer: "逆断層"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "引っ張る力と押し潰す力が反対のときに形成される断層",
+        hintImage: "images/slip_fault",
+        hintText: "",
+        answer: "横ずれ断層"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "過去200万年に繰り返し活動し、将来も活動が推定される断層",
+        hintImage: "",
+        hintText: "",
+        answer: "活断層"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "大陸プレート内で活断層が起こす地震",
+        hintImage: "images/inland_earthquake.jpg",
+        hintText: "例) 阪神淡路大震災、熊本地震",
+        answer: "直下型地震"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "沈み込み帯で起こる地震",
+        hintImage: "images/subduction.gif",
+        hintText: "",
+        answer: "海溝型地震"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "沈み込み帯の地上部に火山が生成され、海溝から一定の距離に火山が列をなして分布",
+        hintImage: "images/volcano_front.jpg",
+        hintText: "",
+        answer: "火山前線"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "マントル内に存在するマグマの供給源",
+        hintImage: "images/hotspot.jpg",
+        hintText: "例) ハワイ-天皇海山列",
+        answer: "ホットスポット"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "現在は地殻変動が落ち着いている地域",
+        hintImage: "",
+        hintText: "↔変動帯(新期造山帯)",
+        answer: "安定地域"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "安定地域の内、古生代に造山運動が生じた地帯",
+        hintImage: "",
+        hintText: "例) アパラチア山脈、スカンディナビア山脈",
+        answer: "古期造山帯"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "安定地域の内、先カンブリア時代に形成され、その後地殻変動を経なかった陸地",
+        hintImage: "",
+        hintText: "",
+        answer: "安定陸塊"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "安定陸塊のうち、<br>楯のような形状で、<br>先カンブリア時代の地層が露出",
+        hintImage: "images/shield_table.jpg",
+        hintText: "",
+        answer: "楯状地"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "安定陸塊のうち、<br>卓のような形状で、<br>先カンブリア時代の地層の上に、古生代以降の地層が堆積",
+        hintImage: "images/shield_table.jpg",
+        hintText: "",
+        answer: "卓状地"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "長期間の浸食(浸食輪廻)によって形成された大陸内部の緩やかな地形",
+        hintImage: "images/peneplain.webp",
+        hintText: "",
+        answer: "準平原"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "海中に没した後、基盤の上に何層も地層が堆積した地形",
+        hintImage: "images/structural_plain.webp",
+        hintText: "",
+        answer: "構造平野"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 3,
+        desc: "浸食輪廻とは何か？",
+        hintImage: "images/erosion_cycle.webp",
+        hintText: "原地形 → 幼年期 → 壮年期 → 老年期 → 準平原",
+        answer: "河川の浸食・風化<br>→ 谷深く・尾根鋭く<br>→ 河川の浸食・風化<br>→ 谷広く・尾根鈍く<br>→ 準平原"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "新規鉱山帯では、原油・天然ガスはどこから取れるか",
+        hintImage: "images/oil_field.gif",
+        hintText: "褶曲の○○の油田・ガス田",
+        answer: "褶曲の背斜"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "古期鉱山帯には何の鉱山資源が堆積している？",
+        hintImage: "",
+        hintText: "",
+        answer: "石炭"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "安定陸塊には何の鉱山資源が堆積している？",
+        hintImage: "",
+        hintText: "O₂濃度up → 海水中の鉄イオンが○○に",
+        answer: "O₂濃度up → 海水中のFe²⁺が酸化鉄に → 海底に堆積"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "沈み込み帯で形成される弓なりの列島<br>(海溝の大陸側)",
+        hintImage: "images/arc.png",
+        hintText: "例) 日本列島",
+        answer: "島弧"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "日本列島形成史①<br>ユーラシアプレートの下にイザナギプレートが沈み込んで出来たものは？",
+        hintImage: "images/median_tectonic.jpg",
+        hintText: "ユーラシアプレートに横ずれの力が働いて出来た",
+        answer: "中央構造線"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "日本列島形成史②<br>イザナギプレートの沈み込みにより、イザナギプレート上にあった堆積物が大陸側についたものを何というか。",
+        hintImage: "images/adduct.png",
+        hintText: "例) 四万十帯",
+        answer: "付加体"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "日本列島形成史③<br>大陸の縁で地溝帯が形成され、海水が侵入してできた海",
+        hintImage: "",
+        hintText: "",
+        answer: "日本海"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 1,
+        desc: "日本列島形成史④<br>日本海の拡大 → 東日本は反時計、西日本は時計回りに回転 → 何ができた？",
+        hintImage: "images/fossamagna.jpg",
+        hintText: "",
+        answer: "フォッサマグナ"
+    },
+    {
+        category: "大地形",
+        category_eng: "l_terrain",
+        level: 2,
+        desc: "日本列島形成史<br>①②③④以降の流れは？",
+        hintImage: "",
+        hintText: "",
+        answer: "イザナギ → 太平洋&フィリピン海<br>フィリピン海プレート上の伊豆が衝突 → 沈み込めず半島に"
     },
 
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "熱・光・動力などの源になるエネルギー供給する資源",
         hintImage: "",
         hintText: "",
@@ -86,6 +616,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "天然のままの物質を形を変えずに利用するエネルギー資源",
         hintImage: "images/p_energy.jpg",
         hintText: "薪・石炭・石油",
@@ -94,6 +625,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "一次エネルギーを加工して扱いやすくしたエネルギー資源",
         hintImage: "",
         hintText: "木炭・電力",
@@ -102,6 +634,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "生物の遺骸が長い時間をかけて変成してできたエネルギー源",
         hintImage: "",
         hintText: "",
@@ -110,6 +643,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "太古の植物の遺骸が体積・埋没し、変成して可燃性の固体になった化石燃料",
         hintImage: "images/coal.jpg",
         hintText: "",
@@ -118,6 +652,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "太古の動植物の遺骸が体積・埋没し、変成して可燃性の液体になった化石燃料",
         hintImage: "",
         hintText: "",
@@ -126,6 +661,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "石炭の近くで多く産出する、可燃性の気体の化石燃料",
         hintImage: "",
         hintText: "",
@@ -134,6 +670,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "利用するエネルギー源の、需要上の大きな変革",
         hintImage: "images/energy_rev.gif",
         hintText: "1960年代：石炭 → 石油・天然ガス",
@@ -142,6 +679,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 3,
         desc: "エネルギー革命の原因は？",
         hintImage: "images/tram.gif",
         hintText: "路面電車→○○<br>○○の増加",
@@ -150,6 +688,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "自然現象を利用したエネルギー",
         hintImage: "",
         hintText: "主に電力源として利用されるエネルギー",
@@ -158,6 +697,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "水の落下エネルギーによってタービンを回転させる発電方法",
         hintImage: "images/water.jpg",
         hintText: "",
@@ -166,6 +706,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "太陽電池を用い、太陽エネルギーから発電する方法",
         hintImage: "images/solar.jpg",
         hintText: "",
@@ -174,6 +715,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "風の力で風車を回転させる発電方法",
         hintImage: "images/wind.jg",
         hintText: "",
@@ -182,6 +724,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 1,
         desc: "地下の熱水から得た水蒸気でタービンを回転させる発電方法",
         hintImage: "images/geothermal.jpg",
         hintText: "",
@@ -190,6 +733,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 3,
         desc: "地熱発電の環境問題に関する問題点は？",
         hintImage: "images/geothermal.jpg",
         hintText: "地熱発電の適地 ≒ 国立公園",
@@ -198,6 +742,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 2,
         desc: "生物資源を燃料とした発電方法",
         hintImage: "images/biomass.jpg",
         hintText: "",
@@ -206,6 +751,7 @@ const words = [
     {
         category: "エネルギー",
         category_eng: "energy",
+        level: 2,
         desc: "人為的に制御した核分裂反応の熱で発生する水蒸気でタービンを回転させる発電方法",
         hintImage: "images/nuclear.jpg",
         hintText: "",
