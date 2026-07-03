@@ -1,13 +1,12 @@
 body{
-    margin:0;
-    padding:30px;
+    margin: 0;
+    padding: 30px;
+    min-height: 100vh;
     background:
-        linear-gradient(
-            135deg,
-            #f5f7fa,
-            #dfe9f3
-        );
-    font-family:sans-serif;
+        radial-gradient(circle at top left,#6aa8ff25 0%,transparent 35%),
+        radial-gradient(circle at bottom right,#3478f625 0%,transparent 35%),
+        linear-gradient(135deg,#edf3ff,#f9fbff);
+    font-family: "Segoe UI",sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,20 +41,21 @@ h1{
 .card-inner{
     width:100%;
     height:100%;
-
-    background:white;
-    border-radius:15px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-
     display:flex;
+    border-radius:20px;
+    background:rgba(255,255,255,.65);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.6);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
     justify-content:center;
     align-items:center;
 
     text-align:center;
-
-    transition:transform 0.6s;
     overflow:hidden;
+    transition:
+        transform .35s,
+        box-shadow .35s;
 }
 
 /* 回転 */
@@ -95,7 +95,7 @@ h1{
 /* 答え */
 .card-face h2 {
     margin:0;
-    font-size:2rem;
+    font-size:1.5rem;
 }
 
 .card-inner.map .card-face.state-0{
@@ -118,14 +118,24 @@ h1{
     background: rgb(255,225,225);
 }
 
-.card-inner.s_terrain .card-face.state-0 {
+.card-inner.r_terrain .card-face.state-0 {
     background: rgb(245,245,255);
 }
-.card-inner.s_terrain .card-face.state-1 {
+.card-inner.r_terrain .card-face.state-1 {
     background: rgb(235,235,255);
 }
-.card-inner.s_terrain .card-face.state-2 {
+.card-inner.r_terrain .card-face.state-2 {
     background: rgb(225,225,255);
+}
+
+.card-inner.o_terrain .card-face.state-0 {
+    background: rgb(240,255,255);
+}
+.card-inner.o_terrain .card-face.state-1 {
+    background: rgb(225,255,255);
+}
+.card-inner.o_terrain .card-face.state-2 {
+    background: rgb(210,255,255);
 }
 
 .card-inner.energy .card-face.state-0 {
@@ -138,15 +148,37 @@ h1{
     background: rgb(255,255,210);
 }
 
-.select {
-    display: flex;
+.card-inner{
+    border-radius: 18px;
+    overflow: hidden;
+}
+.card-inner.map{
+    border-top: 8px solid #5CB85C;
+}
+.card-inner.l_terrain{
+    border-top: 8px solid #FF6B6B;
+}
+.card-inner.r_terrain{
+    border-top: 8px solid #4D96FF;
+}
+.card-inner.o_terrain{
+    border-top: 8px solid #45D6D6;
+}
+.card-inner.energy{
+    border-top: 8px solid #FFD43B;
+}
+
+.select{
+    display:flex;
     flex-wrap: wrap;
-    gap: 50px;
-    padding: 30px;
-    font-size: 25px;
-    font-weight: 500;
-    border-radius: 8px;
-    border: 3px solid black;
+    gap:35px;
+    padding:25px 35px;
+    border:none;
+    border-radius:18px;
+    background:rgba(255,255,255,.7);
+    backdrop-filter:blur(12px);
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.08);
 }
 
 select {
@@ -177,7 +209,7 @@ button {
     filter: invert(90%) sepia(99%) saturate(10000%) hue-rotate(215deg)
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
 
     .card-container{
         display: flex;
