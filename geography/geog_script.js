@@ -3,6 +3,23 @@ const container = document.querySelector(".card-container");
 let allCards = [];
 let isShuffled = false;
 
+function getReviewList(){
+
+    return JSON.parse(
+        localStorage.getItem("reviewList") || "[]"
+    );
+
+}
+
+function saveReviewList(list){
+
+    localStorage.setItem(
+        "reviewList",
+        JSON.stringify(list)
+    );
+
+}
+
 function getCardStates(word) {
 
     const mode =
@@ -54,9 +71,15 @@ function renderCards(){
 
     const selectedLevel =
         document.getElementById("levelSelect").value;
+    
+    const reviewOnly =
+        document.getElementById("reviewOnly").checked;
+    
+    const reviewList =
+        getReviewList();
 
     let filteredWords = words.filter(word => {
-    
+
         const categoryMatch =
             selectedCategory === "all"
             || word.category === selectedCategory;
@@ -65,7 +88,15 @@ function renderCards(){
             selectedLevel === "all"
             || word.level == selectedLevel;
     
-        return categoryMatch && levelMatch;
+        const reviewMatch =
+            !reviewOnly
+            || reviewList.includes(word.id);
+    
+        return (
+            categoryMatch &&
+            levelMatch &&
+            reviewMatch
+        );
     
     });
 
@@ -82,18 +113,61 @@ function renderCards(){
 
         card.innerHTML = `
             <div class="card-inner ${word.category_eng}">
-                <div class="card-face">
+            
+                <button
+                    class="review-btn"
+                    data-id="${word.id}">
+                </button>
+            
+                <div class="card-face ${word.category_eng} level-${word.level}">
                     ${states[0]}
                 </div>
+            
             </div>
         `;
 
         container.appendChild(card);
 
+        const reviewBtn =
+            card.querySelector(".review-btn");
+        
+        const reviewList =
+            getReviewList();
+        
+        if(reviewList.includes(word.id)){
+            reviewBtn.classList.add("checked");
+        }
+
         const face =
             card.querySelector(".card-face");
         
         face.classList.add("state-0");
+
+        reviewBtn.addEventListener("click", (e) => {
+
+            // カードがめくれないようにする
+            e.stopPropagation();
+        
+            let reviewList = getReviewList();
+        
+            if(reviewList.includes(word.id)){
+        
+                reviewList =
+                    reviewList.filter(id => id !== word.id);
+        
+                reviewBtn.classList.remove("checked");
+        
+            }else{
+        
+                reviewList.push(word.id);
+        
+                reviewBtn.classList.add("checked");
+        
+            }
+        
+            saveReviewList(reviewList);
+        
+        });
 
         let state = 0;
 
@@ -205,5 +279,12 @@ document
 document
     .getElementById("levelSelect")
     .addEventListener("change", renderCards);
+
+document
+    .getElementById("reviewOnly")
+    .addEventListener(
+        "change",
+        renderCards
+    );
 
 renderCards();

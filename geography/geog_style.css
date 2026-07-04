@@ -98,74 +98,99 @@ h1{
     font-size:1.5rem;
 }
 
-.card-inner.map .card-face.state-0{
+.card-inner {
+    position: relative;
+    overflow: hidden;
+}
+.card-face::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    transition: width .35s ease;
+    background: rgb(216, 216, 216);
+}
+.card-face.state-0::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 33%;
+    transition: width .35s ease;
+    background: #777777;
+}
+.card-face.state-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 66%;
+    transition: width .35s ease;
+    background: #777777;
+}
+.card-face.state-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    transition: width .35s ease;
+    background: #777777;
+}
+
+.card-face.map.level-1{
     background: rgb(245,255,245);
 }
-.card-inner.map .card-face.state-1{
+.card-face.map.level-2{
     background: rgb(235,255,235);
 }
-.card-inner.map .card-face.state-2{
+.card-face.map.level-3{
     background: rgb(225,255,225);
 }
 
-.card-inner.l_terrain .card-face.state-0{
+.card-face.l_terrain.level1{
     background: rgb(255,245,245);
 }
-.card-inner.l_terrain .card-face.state-1{
+.card-face.l_terrain.level-2{
     background: rgb(255,235,235);
 }
-.card-inner.l_terrain .card-face.state-2{
+.card-face.l_terrain.level-3{
     background: rgb(255,225,225);
 }
 
-.card-inner.r_terrain .card-face.state-0 {
+.card-face.r_terrain.level-1 {
     background: rgb(245,245,255);
 }
-.card-inner.r_terrain .card-face.state-1 {
+.card-face.r_terrain.level-2 {
     background: rgb(235,235,255);
 }
-.card-inner.r_terrain .card-face.state-2 {
+.card-face.r_terrain.level-3 {
     background: rgb(225,225,255);
 }
 
-.card-inner.o_terrain .card-face.state-0 {
+.card-face.o_terrain.level-1 {
     background: rgb(240,255,255);
 }
-.card-inner.o_terrain .card-face.state-1 {
+.card-face.o_terrain.level-2 {
     background: rgb(225,255,255);
 }
-.card-inner.o_terrain .card-face.state-2 {
+.card-face.o_terrain.level-3 {
     background: rgb(210,255,255);
 }
 
-.card-inner.energy .card-face.state-0 {
+.card-face.energy.level-1 {
     background: rgb(255,255,240);
 }
-.card-inner.energy .card-face.state-1 {
+.card-face.energy.level-2 {
     background: rgb(255,255,225);
 }
-.card-inner.energy .card-face.state-2 {
+.card-face.energy.level-3 {
     background: rgb(255,255,210);
-}
-
-.card-inner{
-    border-radius: 18px;
-    overflow: hidden;
-}
-.card-inner.map{
-    border-top: 8px solid #5CB85C;
-}
-.card-inner.l_terrain{
-    border-top: 8px solid #FF6B6B;
-}
-.card-inner.r_terrain{
-    border-top: 8px solid #4D96FF;
-}
-.card-inner.o_terrain{
-    border-top: 8px solid #45D6D6;
-}
-.card-inner.energy{
-    border-top: 8px solid #FFD43B;
 }
 
 .select{
@@ -197,6 +222,28 @@ button {
     border: 3.5px solid #3478f6;
     color: #3478f6;
 }
+.review-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:35px;
+    height:35px;
+    border-radius:25%;
+    background:white;
+    border:2px solid #bbb;
+    cursor:pointer;
+    z-index:100;
+}
+.review-btn.checked{
+    background:#ff5757;
+    border-color:#ff5757;
+}
+.review-btn.checked::after{
+    content:"✓";
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+}
 .reset {
     height: 65px;
     position: fixed;
@@ -217,10 +264,8 @@ button {
         align-items: center;
         overflow-x: hidden;
     }
-
     .card{
         width: 90%;
         max-width: 400px;
     }
-
 }

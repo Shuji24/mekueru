@@ -1,5 +1,6 @@
 const words = [
     {
+        id: 1,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -9,6 +10,7 @@ const words = [
         answer: "メルカトル図法"
     },
     {
+        id: 2,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -18,6 +20,7 @@ const words = [
         answer: "モルワイデ図法"
     },
     {
+        id: 3,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -27,6 +30,7 @@ const words = [
         answer: "正距方位図法"
     },
     {
+        id: 4,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -36,6 +40,7 @@ const words = [
         answer: "①ユーフラテス川<br>②大地<br>③環海",
     },
     {
+        id: 5,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -45,6 +50,7 @@ const words = [
         answer: "緯線・経線",
     },
     {
+        id: 6,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -54,6 +60,7 @@ const words = [
         answer: "キリスト教",
     },
     {
+        id: 7,
         category: "地図",
         category_eng: "map",
         level: 3,
@@ -63,6 +70,7 @@ const words = [
         answer: "大航海時代に、航海用の、角度が正確な地図を作るため。",
     },
     {
+        id: 8,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -72,6 +80,7 @@ const words = [
         answer: "大化の改新"
     },
     {
+        id: 9,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -81,6 +90,7 @@ const words = [
         answer: "行基図"
     },
     {
+        id: 10,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -90,6 +100,7 @@ const words = [
         answer: "流宣図"
     },
     {
+        id: 11,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -99,6 +110,7 @@ const words = [
         answer: "改正日本輿地路程全図"
     },
     {
+        id: 12,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -108,6 +120,7 @@ const words = [
         answer: "大日本沿海輿地全図<br>(だいにっぽんえんかいよちぜんず)",
     },
     {
+        id: 13,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -117,6 +130,7 @@ const words = [
         answer: "戦時改描",
     },
     {
+        id: 14,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -126,6 +140,7 @@ const words = [
         answer: "ロランC",
     },
     {
+        id: 15,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -135,6 +150,7 @@ const words = [
         answer: "GPS",
     },
     {
+        id: 16,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -144,6 +160,7 @@ const words = [
         answer: "地理情報システム(GIS)",
     },
     {
+        id: 17,
         category: "地図",
         category_eng: "map",
         level: 3,
@@ -153,6 +170,7 @@ const words = [
         answer: "都市計画・防災・商圏分析・観光・交通",
     },
     {
+        id: 18,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -162,6 +180,7 @@ const words = [
         answer: "数値地図",
     },
     {
+        id: 19,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -171,6 +190,7 @@ const words = [
         answer: "一般図",
     },
     {
+        id: 20,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -180,6 +200,7 @@ const words = [
         answer: "主題図",
     },
     {
+        id: 21,
         category: "地図",
         category_eng: "map",
         level: 1,
@@ -189,6 +210,7 @@ const words = [
         answer: "統計地図",
     },
     {
+        id: 22,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -198,6 +220,7 @@ const words = [
         answer: "ドットマップ",
     },
     {
+        id: 23,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -207,6 +230,7 @@ const words = [
         answer: "等値線図",
     },
     {
+        id: 24,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -216,6 +240,7 @@ const words = [
         answer: "流線図",
     },
     {
+        id: 25,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -225,6 +250,7 @@ const words = [
         answer: "図形表現図",
     },
     {
+        id: 26,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -234,6 +260,7 @@ const words = [
         answer: "カルトグラム",
     },
     {
+        id: 27,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -243,6 +270,7 @@ const words = [
         answer: "階級区分図",
     },
     {
+        id: 28,
         category: "地図",
         category_eng: "map",
         level: 2,
@@ -252,6 +280,7 @@ const words = [
         answer: "メッシュマップ",
     },
     {
+        id: 29,
         category: "地図",
         category_eng: "map",
         level: 3,
@@ -262,6 +291,7 @@ const words = [
     },
 
     {
+        id: 30,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -271,6 +301,7 @@ const words = [
         answer: "大地形"
     },
     {
+        id: 31,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -280,6 +311,7 @@ const words = [
         answer: "内的営力"
     },
     {
+        id: 32,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -289,6 +321,7 @@ const words = [
         answer: "地向斜説"
     },
     {
+        id: 33,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -298,6 +331,7 @@ const words = [
         answer: "超大陸パンゲア"
     },
     {
+        id: 34,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -307,6 +341,7 @@ const words = [
         answer: "SONAR"
     },
     {
+        id: 35,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -316,6 +351,7 @@ const words = [
         answer: "海洋底拡大説"
     },
     {
+        id: 36,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -325,6 +361,7 @@ const words = [
         answer: "プレートテクトニクス"
     },
     {
+        id: 37,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -334,6 +371,7 @@ const words = [
         answer: "変動帯(新規造山帯)"
     },
     {
+        id: 38,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -343,6 +381,7 @@ const words = [
         answer: "広がる境界"
     },
     {
+        id: 39,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -352,6 +391,7 @@ const words = [
         answer: "狭まる境界"
     },
     {
+        id: 40,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -361,6 +401,7 @@ const words = [
         answer: "①沈み込み帯<br>②衝突帯"
     },
     {
+        id: 41,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -370,6 +411,7 @@ const words = [
         answer: "すれ違う境界<br>(トランスフォーム断層)"
     },
     {
+        id: 42,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -379,6 +421,7 @@ const words = [
         answer: "アセノスフェア"
     },
     {
+        id: 43,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -388,6 +431,7 @@ const words = [
         answer: "正断層"
     },
     {
+        id: 44,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -397,6 +441,7 @@ const words = [
         answer: "逆断層"
     },
     {
+        id: 45,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -406,6 +451,7 @@ const words = [
         answer: "横ずれ断層"
     },
     {
+        id: 46,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -415,6 +461,7 @@ const words = [
         answer: "活断層"
     },
     {
+        id: 47,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -424,6 +471,7 @@ const words = [
         answer: "直下型地震"
     },
     {
+        id: 48,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -433,6 +481,7 @@ const words = [
         answer: "海溝型地震"
     },
     {
+        id: 49,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -442,6 +491,7 @@ const words = [
         answer: "火山前線"
     },
     {
+        id: 50,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -451,6 +501,7 @@ const words = [
         answer: "ホットスポット"
     },
     {
+        id: 51,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -460,6 +511,7 @@ const words = [
         answer: "安定地域"
     },
     {
+        id: 52,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -469,6 +521,7 @@ const words = [
         answer: "古期造山帯"
     },
     {
+        id: 53,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -478,6 +531,7 @@ const words = [
         answer: "安定陸塊"
     },
     {
+        id: 54,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -487,6 +541,7 @@ const words = [
         answer: "楯状地"
     },
     {
+        id: 55,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -496,6 +551,7 @@ const words = [
         answer: "卓状地"
     },
     {
+        id: 56,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -505,6 +561,7 @@ const words = [
         answer: "準平原"
     },
     {
+        id: 57,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -514,6 +571,7 @@ const words = [
         answer: "構造平野"
     },
     {
+        id: 58,
         category: "大地形",
         category_eng: "l_terrain",
         level: 3,
@@ -523,6 +581,7 @@ const words = [
         answer: "河川の浸食・風化<br>→ 谷深く・尾根鋭く<br>→ 河川の浸食・風化<br>→ 谷広く・尾根鈍く<br>→ 準平原"
     },
     {
+        id: 59,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -532,6 +591,7 @@ const words = [
         answer: "褶曲の背斜"
     },
     {
+        id: 60,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -541,6 +601,7 @@ const words = [
         answer: "石炭"
     },
     {
+        id: 61,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -550,6 +611,7 @@ const words = [
         answer: "O₂濃度up → 海水中のFe²⁺が酸化鉄に → 海底に堆積"
     },
     {
+        id: 62,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -559,6 +621,7 @@ const words = [
         answer: "島弧"
     },
     {
+        id: 63,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -568,6 +631,7 @@ const words = [
         answer: "中央構造線"
     },
     {
+        id: 64,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -577,6 +641,7 @@ const words = [
         answer: "付加体"
     },
     {
+        id: 65,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -586,6 +651,7 @@ const words = [
         answer: "日本海"
     },
     {
+        id: 66,
         category: "大地形",
         category_eng: "l_terrain",
         level: 1,
@@ -595,6 +661,7 @@ const words = [
         answer: "フォッサマグナ"
     },
     {
+        id: 67,
         category: "大地形",
         category_eng: "l_terrain",
         level: 2,
@@ -605,6 +672,7 @@ const words = [
     },
 
     {
+        id: 68,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -614,6 +682,7 @@ const words = [
         answer: "山地を浸食する ＆ 下流に土砂を運搬・堆積することで大地をならす"
     },
     {
+        id: 69,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -623,6 +692,7 @@ const words = [
         answer: "流域"
     },
     {
+        id: 70,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 2,
@@ -632,6 +702,7 @@ const words = [
         answer: "利根川"
     },
     {
+        id: 71,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -641,6 +712,7 @@ const words = [
         answer: "V字谷"
     },
     {
+        id: 72,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -650,6 +722,7 @@ const words = [
         answer: "谷底平野・河岸段丘"
     },
     {
+        id: 73,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -659,6 +732,7 @@ const words = [
         answer: "↓浸食<br>V字谷<br>↓堆積<br>谷底平野<br>↓浸食"
     },
     {
+        id: 74,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -668,6 +742,7 @@ const words = [
         answer: "谷口"
     },
     {
+        id: 75,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -677,6 +752,7 @@ const words = [
         answer: "谷口で傾斜緩やかに、水深浅くなり、<br>運搬作用が減り、堆積作用が強くなって出来る"
     },
     {
+        id: 76,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -686,6 +762,7 @@ const words = [
         answer: "扇頂"
     },
     {
+        id: 77,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -695,6 +772,7 @@ const words = [
         answer: "扇央"
     },
     {
+        id: 78,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -704,6 +782,7 @@ const words = [
         answer: "扇端"
     },
     {
+        id: 79,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 2,
@@ -713,6 +792,7 @@ const words = [
         answer: "水無川"
     },
     {
+        id: 80,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -722,6 +802,7 @@ const words = [
         answer: "地下水位が深く、水はけが良い<br>↓<br>果樹園 / 集落少ない"
     },
     {
+        id: 81,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -731,6 +812,7 @@ const words = [
         answer: "氾濫原"
     },
     {
+        id: 82,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -740,6 +822,7 @@ const words = [
         answer: "三日月湖"
     },
     {
+        id: 83,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -749,6 +832,7 @@ const words = [
         answer: "自然堤防"
     },
     {
+        id: 84,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -758,6 +842,7 @@ const words = [
         answer: "後背湿地"
     },
     {
+        id: 85,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -767,6 +852,7 @@ const words = [
         answer: "自然堤防上に集落を作り、後輩湿地に水田を作った。"
     },
     {
+        id: 86,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -776,6 +862,7 @@ const words = [
         answer: "輪中"
     },
     {
+        id: 87,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -785,6 +872,7 @@ const words = [
         answer: "三角州"
     },
     {
+        id: 88,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -794,6 +882,7 @@ const words = [
         answer: "カスプ状"
     },
     {
+        id: 89,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -803,6 +892,7 @@ const words = [
         answer: "円弧状"
     },
     {
+        id: 90,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -812,6 +902,7 @@ const words = [
         answer: "鳥趾状"
     },
     {
+        id: 91,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -821,6 +912,7 @@ const words = [
         answer: "ユーラシアとフィリピン海の境界の海溝にあり、堆積しても沈んでいくから。"
     },
     {
+        id: 92,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -830,6 +922,7 @@ const words = [
         answer: "都市化・工業化が進み、地下水の過剰なくみ上げによる地盤沈下が起こり、海抜0m地帯になってしまう。"
     },
     {
+        id: 93,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -839,6 +932,7 @@ const words = [
         answer: "①津波・高潮・洪水<br>②地盤沈下・液状化"
     },
     {
+        id: 94,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 2,
@@ -848,6 +942,7 @@ const words = [
         answer: "沖野平野"
     },
     {
+        id: 95,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 2,
@@ -857,6 +952,7 @@ const words = [
         answer: "台地"
     },
     {
+        id: 96,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 1,
@@ -866,6 +962,7 @@ const words = [
         answer: "天井川"
     },
     {
+        id: 97,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -875,6 +972,7 @@ const words = [
         answer: "河川の隣に堤防を立てる<br>↓<br>堆積して川の水位あがる<br>↓<br>堤防高くする<br>"
     },
     {
+        id: 98,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 2,
@@ -884,6 +982,7 @@ const words = [
         answer: "真砂土"
     },
     {
+        id: 99,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -893,6 +992,7 @@ const words = [
         answer: "①真砂土は浸食に弱→上流からの土砂が多→土砂堆積が多<br>②稲作の歴史古→水利の整備進んでた→昔から河道が固定"
     },
     {
+        id: 100,
         category: "河川地形",
         category_eng: "r_terrain",
         level: 3,
@@ -903,6 +1003,7 @@ const words = [
     },
 
     {
+        id: 101,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -912,6 +1013,7 @@ const words = [
         answer: "岩石海岸"
     },
     {
+        id: 102,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -921,6 +1023,7 @@ const words = [
         answer: "砂浜海岸"
     },
     {
+        id: 103,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -930,6 +1033,7 @@ const words = [
         answer: "海食崖"
     },
     {
+        id: 104,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -939,6 +1043,7 @@ const words = [
         answer: "波食棚"
     },
     {
+        id: 105,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -948,6 +1053,7 @@ const words = [
         answer: "海岸砂丘"
     },
     {
+        id: 106,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -957,6 +1063,7 @@ const words = [
         answer: "砂嘴"
     },
     {
+        id: 107,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -966,6 +1073,7 @@ const words = [
         answer: "砂州"
     },
     {
+        id: 108,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -975,6 +1083,7 @@ const words = [
         answer: "沿岸州"
     },
     {
+        id: 109,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -984,6 +1093,7 @@ const words = [
         answer: "潟湖(ラグーン)"
     },
     {
+        id: 110,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -993,6 +1103,7 @@ const words = [
         answer: "陸繋砂州"
     },
     {
+        id: 111,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 3,
@@ -1002,6 +1113,7 @@ const words = [
         answer: "堤防ダム→運搬される砂礫が止められる→海岸まで来ない<br>消波ブロック→岩石海岸の浸食減→堆積減"
     },
     {
+        id: 112,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1011,6 +1123,7 @@ const words = [
         answer: "離水"
     },
     {
+        id: 113,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1020,6 +1133,7 @@ const words = [
         answer: "沈水"
     },
     {
+        id: 114,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1029,6 +1143,7 @@ const words = [
         answer: "海岸段丘"
     },
     {
+        id: 115,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1038,6 +1153,7 @@ const words = [
         answer: "海岸平野"
     },
     {
+        id: 116,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1047,6 +1163,7 @@ const words = [
         answer: "浜堤"
     },
     {
+        id: 117,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1056,6 +1173,7 @@ const words = [
         answer: "リアス海岸"
     },
     {
+        id: 118,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1065,6 +1183,7 @@ const words = [
         answer: "多島海"
     },
     {
+        id: 119,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 3,
@@ -1074,6 +1193,7 @@ const words = [
         answer: "内湾では養殖・陸ではみかんの段々畑"
     },
     {
+        id: 120,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1083,6 +1203,7 @@ const words = [
         answer: "氷期・間氷期サイクル"
     },
     {
+        id: 121,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1092,6 +1213,7 @@ const words = [
         answer: "間氷期"
     },
     {
+        id: 122,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 2,
@@ -1101,6 +1223,7 @@ const words = [
         answer: "①地球の周期的運動<br>②海洋の深層循環<br>③太陽活動<br>④火山活動"
     },
     {
+        id: 123,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 3,
@@ -1110,6 +1233,7 @@ const words = [
         answer: "海面の低下<br>＆<br>土地の隆起<br>(海溝に近い程隆起)"
     },
     {
+        id: 124,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1119,6 +1243,7 @@ const words = [
         answer: "氷床<br>(大陸氷河)"
     },
     {
+        id: 125,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1128,6 +1253,7 @@ const words = [
         answer: "山岳氷河"
     },
     {
+        id: 126,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1137,6 +1263,7 @@ const words = [
         answer: "カール"
     },
     {
+        id: 127,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1146,6 +1273,7 @@ const words = [
         answer: "ホルン"
     },
     {
+        id: 128,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1155,6 +1283,7 @@ const words = [
         answer: "U字谷"
     },
     {
+        id: 129,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1164,6 +1293,7 @@ const words = [
         answer: "モレーン"
     },
     {
+        id: 130,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1173,6 +1303,7 @@ const words = [
         answer: "氷河湖"
     },
     {
+        id: 131,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 3,
@@ -1182,6 +1313,7 @@ const words = [
         answer: "カールの崩壊<br>↓<br>村のあるU字谷に氷河が流下"
     },
     {
+        id: 132,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1191,6 +1323,7 @@ const words = [
         answer: "サンゴ礁"
     },
     {
+        id: 133,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1200,6 +1333,7 @@ const words = [
         answer: "石灰岩"
     },
     {
+        id: 134,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1209,6 +1343,7 @@ const words = [
         answer: "裾礁"
     },
     {
+        id: 135,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1218,6 +1353,7 @@ const words = [
         answer: "堡礁"
     },
     {
+        id: 136,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1227,6 +1363,7 @@ const words = [
         answer: "環礁"
     },
     {
+        id: 137,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 2,
@@ -1236,6 +1373,7 @@ const words = [
         answer: "礁湖(ラグーン)"
     },
     {
+        id: 138,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 3,
@@ -1245,6 +1383,7 @@ const words = [
         answer: "赤道付近…氷期に形成→海水準上昇→陸なし<br>(サンゴ礁は成長するからなくならない)<br>30度付近…間氷期に形成<br>(海水準上昇後に形成されたから陸残る)"
     },
     {
+        id: 139,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 2,
@@ -1254,6 +1393,7 @@ const words = [
         answer: "全国各地(内陸も)"
     },
     {
+        id: 140,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 3,
@@ -1263,6 +1403,7 @@ const words = [
         answer: "海洋のサンゴ礁で形成された石灰岩が、プレート移動によって日本列島に付加したから。"
     },
     {
+        id: 141,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 1,
@@ -1272,6 +1413,7 @@ const words = [
         answer: "カルスト地形"
     },
     {
+        id: 142,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 2,
@@ -1281,6 +1423,7 @@ const words = [
         answer: "ドリーネ<br>↓<br>ウバーレ<br>↓<br>ポリエ(溶食盆地)"
     },
     {
+        id: 143,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 2,
@@ -1290,6 +1433,7 @@ const words = [
         answer: "タワーカルスト"
     },
     {
+        id: 144,
         category: "その他の地形",
         category_eng: "o_terrain",
         level: 2,
@@ -1300,6 +1444,7 @@ const words = [
     },
 
     {
+        id: 145,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1309,6 +1454,7 @@ const words = [
         answer: "エネルギー資源"
     },
     {
+        id: 146,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1318,6 +1464,7 @@ const words = [
         answer: "一次エネルギー"
     },
     {
+        id: 147,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1327,6 +1474,7 @@ const words = [
         answer: "ニ次エネルギー"
     },
     {
+        id: 148,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1336,6 +1484,7 @@ const words = [
         answer: "化石燃料"
     },
     {
+        id: 149,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1345,6 +1494,7 @@ const words = [
         answer: "石炭"
     },
     {
+        id: 150,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1354,6 +1504,7 @@ const words = [
         answer: "石油"
     },
     {
+        id: 151,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1363,6 +1514,7 @@ const words = [
         answer: "天然ガス"
     },
     {
+        id: 152,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1372,6 +1524,7 @@ const words = [
         answer: "エネルギー革命"
     },
     {
+        id: 153,
         category: "エネルギー",
         category_eng: "energy",
         level: 3,
@@ -1381,6 +1534,7 @@ const words = [
         answer: "車や飛行機の増加による石油利用料の増加"
     },
     {
+        id: 154,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1390,6 +1544,7 @@ const words = [
         answer: "自然エネルギー(再生利用エネルギー)"
     },
     {
+        id: 155,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1399,6 +1554,7 @@ const words = [
         answer: "水力発電"
     },
     {
+        id: 156,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1408,6 +1564,7 @@ const words = [
         answer: "太陽光発電"
     },
     {
+        id: 157,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1417,6 +1574,7 @@ const words = [
         answer: "風力発電"
     },
     {
+        id: 158,
         category: "エネルギー",
         category_eng: "energy",
         level: 1,
@@ -1426,6 +1584,7 @@ const words = [
         answer: "地熱発電"
     },
     {
+        id: 159,
         category: "エネルギー",
         category_eng: "energy",
         level: 3,
@@ -1435,6 +1594,7 @@ const words = [
         answer: "地熱発電は火山の近くに多く、国立公園とかぶることが多いため、森林伐採などの制限を受けることが多い。"
     },
     {
+        id: 160,
         category: "エネルギー",
         category_eng: "energy",
         level: 2,
@@ -1444,6 +1604,7 @@ const words = [
         answer: "バイオマス発電"
     },
     {
+        id: 161,
         category: "エネルギー",
         category_eng: "energy",
         level: 2,
@@ -1453,6 +1614,7 @@ const words = [
         answer: "原子力発電"
     },
     {
+        id: 162,
         category: "エネルギー",
         category_eng: "energy",
         level: 2,
@@ -1462,6 +1624,7 @@ const words = [
         answer: "坑道掘り"
     },
     {
+        id: 163,
         category: "エネルギー",
         category_eng: "energy",
         level: 2,
@@ -1471,6 +1634,7 @@ const words = [
         answer: "露天掘り"
     },
     {
+        id: 164,
         category: "エネルギー",
         category_eng: "energy",
         level: 3,
@@ -1480,6 +1644,7 @@ const words = [
         answer: "石油・天然ガスに比べてCO₂排出量が多いから。"
     },
     {
+        id: 165,
         category: "エネルギー",
         category_eng: "energy",
         level: 2,
@@ -1489,6 +1654,7 @@ const words = [
         answer: "国際石油資本"
     },
     {
+        id: 166,
         category: "エネルギー",
         category_eng: "energy",
         level: 2,
@@ -1498,6 +1664,7 @@ const words = [
         answer: "資本ナショナリズム"
     },
     {
+        id: 167,
         category: "エネルギー",
         category_eng: "energy",
         level: 3,
@@ -1507,6 +1674,7 @@ const words = [
         answer: "策：石油の代わりに、バイオマスエネルギーといったSAF(持続可能な航空燃料)を用いる。"
     },
     {
+        id: 168,
         category: "エネルギー",
         category_eng: "energy",
         level: 3,
