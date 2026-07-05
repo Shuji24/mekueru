@@ -90,7 +90,7 @@ function renderCards(){
     
         const reviewMatch =
             !reviewOnly
-            || reviewList.includes(word.id);
+            || reviewList.includes(word.eid);
     
         return (
             categoryMatch &&
@@ -116,7 +116,7 @@ function renderCards(){
             
                 <button
                     class="review-btn"
-                    data-id="${word.id}">
+                    data-id="${word.eid}">
                 </button>
             
                 <div class="card-face ${word.category_eng} level-${word.level}">
@@ -134,7 +134,7 @@ function renderCards(){
         const reviewList =
             getReviewList();
         
-        if(reviewList.includes(word.id)){
+        if(reviewList.includes(word.eid)){
             reviewBtn.classList.add("checked");
         }
 
@@ -150,16 +150,16 @@ function renderCards(){
         
             let reviewList = getReviewList();
         
-            if(reviewList.includes(word.id)){
+            if(reviewList.includes(word.eid)){
         
                 reviewList =
-                    reviewList.filter(id => id !== word.id);
+                    reviewList.filter(id => id !== word.eid);
         
                 reviewBtn.classList.remove("checked");
         
             }else{
         
-                reviewList.push(word.id);
+                reviewList.push(word.eid);
         
                 reviewBtn.classList.add("checked");
         
