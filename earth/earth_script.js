@@ -23,7 +23,7 @@ function saveReviewList(list){
 function getCardStates(word) {
 
     const mode =
-        document.getElementById("modeSelect").value;
+        document.getElementByeId("modeSelect").value;
 
     if(mode === "dha"){
         return [
@@ -67,13 +67,13 @@ function renderCards(){
     allCards = [];
 
     const selectedCategory =
-        document.getElementById("categorySelect").value;
+        document.getElementByeId("categorySelect").value;
 
     const selectedLevel =
-        document.getElementById("levelSelect").value;
+        document.getElementByeId("levelSelect").value;
     
     const reviewOnly =
-        document.getElementById("reviewOnly").checked;
+        document.getElementByeId("reviewOnly").checked;
     
     const reviewList =
         getReviewList();
@@ -246,13 +246,13 @@ function resetCards(){
 }
 
 document
-    .getElementById("shuffleButton")
+    .getElementByeId("shuffleButton")
     .addEventListener("click", () => {
 
         isShuffled = !isShuffled;
 
         const button =
-            document.getElementById("shuffleButton");
+            document.getElementByeId("shuffleButton");
 
         if(isShuffled){
             button.textContent = "ランダム解除";
@@ -265,23 +265,23 @@ document
     });
 
 document
-    .getElementById("resetButton")
+    .getElementByeId("resetButton")
     .addEventListener("click", resetCards);
 
 document
-    .getElementById("modeSelect")
+    .getElementByeId("modeSelect")
     .addEventListener("change", resetCards);
 
 document
-    .getElementById("categorySelect")
+    .getElementByeId("categorySelect")
     .addEventListener("change", renderCards);
 
 document
-    .getElementById("levelSelect")
+    .getElementByeId("levelSelect")
     .addEventListener("change", renderCards);
 
 document
-    .getElementById("reviewOnly")
+    .getElementByeId("reviewOnly")
     .addEventListener(
         "change",
         renderCards
