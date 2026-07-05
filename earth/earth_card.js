@@ -1,9 +1,9 @@
 const words = [
     {
-        id: 1,
+        id: e1,
         category: "地球の形",
         category_eng: "",
-        level: e1,
+        level: 1,
         desc: "エラトステネスはどうやって地球の大きさを測定した？",
         hintImage: "images/",
         hintText: "太陽高度",
