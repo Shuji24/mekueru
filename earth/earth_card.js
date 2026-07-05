@@ -1,6 +1,6 @@
 const words = [
     {
-        id: e1,
+        eid: 1,
         category: "地球の形",
         category_eng: "",
         level: 1,
@@ -10,7 +10,7 @@ const words = [
         answer: "同時刻に2か所で太陽高度"
     },
     {
-        id: e2,
+        eid: 2,
         category: "地球の形",
         category_eng: "",
         level: 3,
@@ -20,7 +20,7 @@ const words = [
         answer: "45000km"
     },
     {
-        id: e3,
+        eid: 3,
         category: "地球の形",
         category_eng: "",
         level: 1,
@@ -30,7 +30,7 @@ const words = [
         answer: "横長の楕円体"
     },
     {
-        id: e4,
+        eid: 4,
         category: "地球の形",
         category_eng: "",
         level: 3,
@@ -40,7 +40,7 @@ const words = [
         answer: "北極星高度が1°変わるためにどのくらい動けばよいか<br>北極付近：1°が長い<br>赤道付近：1°が短い"
     },
     {
-        id: e5,
+        eid: 5,
         category: "地球の形",
         category_eng: "",
         level: 3,
@@ -50,7 +50,7 @@ const words = [
         answer: "1 / 298"
     },
     {
-        id: e6,
+        eid: 6,
         category: "地球の形",
         category_eng: "",
         level: 1,
@@ -60,7 +60,7 @@ const words = [
         answer: "2"
     },
     {
-        id: e7,
+        eid: 7,
         category: "地球の形",
         category_eng: "",
         level: 2,
@@ -70,7 +70,7 @@ const words = [
         answer: "F = G × <math><mfrac><mn>mM</mn><mn>r²</mn></mfrac></math>"
     },
     {
-        id: e8,
+        eid: 8,
         category: "地球の形",
         category_eng: "",
         level: 2,
@@ -80,7 +80,7 @@ const words = [
         answer: "F = mrω²"
     },
     {
-        id: e9,
+        eid: 9,
         category: "地球の形",
         category_eng: "",
         level: 1,
@@ -90,7 +90,7 @@ const words = [
         answer: "万有引力と遠心力の合力<br>(平均約9.8m/s²)"
     },
     {
-        id: e10,
+        eid: 10,
         category: "地球の形",
         category_eng: "",
         level: 1,
@@ -100,7 +100,7 @@ const words = [
         answer: "高い場所で測った数値<br>↓補正<br>0m地点で測った場合の数値に"
     },
     {
-        id: e11,
+        eid: 11,
         category: "地球の形",
         category_eng: "",
         level: 1,
@@ -110,7 +110,7 @@ const words = [
         answer: "測定した数値…周りの山からの万有引力も含まれる<br>↓補正<br>地球が平らだった場合の数値に"
     },
     {
-        id: e12,
+        eid: 12,
         category: "地球の形",
         category_eng: "",
         level: 1,
@@ -120,7 +120,7 @@ const words = [
         answer: "測定した数値…0mから測定地点までの間にある土等からの万有引力も含まれる<br>↓<br>補正"
     },
     {
-        id: e13,
+        eid: 13,
         category: "地球の形",
         category_eng: "",
         level: 2,
@@ -130,7 +130,7 @@ const words = [
         answer: "g-2πGρh"
     },
     {
-        id: e14,
+        eid: 14,
         category: "地球の形",
         category_eng: "",
         level: 3,
@@ -140,7 +140,7 @@ const words = [
         answer: "何かが土地を持ち上げている！"
     },
     {
-        id: e15,
+        eid: 15,
         category: "地球の形",
         category_eng: "",
         level: 3,
@@ -150,7 +150,7 @@ const words = [
         answer: "高密度物質が眠っている！"
     },
     {
-        id: e16,
+        eid: 16,
         category: "地球の形",
         category_eng: "",
         level: 3,
@@ -160,7 +160,7 @@ const words = [
         answer: "<高密度物質の真上><br>①高い②低い<br><それ以外><br>①低い②高い<br><③><br>標高高→低"
     },
     {
-        id: e17,
+        eid: 17,
         category: "地球の形",
         category_eng: "",
         level: 1,
