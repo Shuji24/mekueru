@@ -153,7 +153,7 @@ function renderCards(){
             if(reviewList.includes(word.eid)){
         
                 reviewList =
-                    reviewList.filter(id => id !== word.eid);
+                    reviewList.filter(eid => eid !== word.eid);
         
                 reviewBtn.classList.remove("checked");
         
