@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>地理 | MekuEru</title>
+    <link rel="stylesheet" href="earth_style.css">
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+
+    <h1 style="line-height: 10px;">地理単語カード</h1>
+    <h3><a href="earth_game.html">ゲームモードへ</a></h3>
+
+    <br>
+    
+    <div class="select">
+        <div>
+            <label>範囲</label>
+            <select id="categorySelect">
+                <option value="all">すべて</option>
+                <option value="地図">地図</option>
+                <option value="大地形">大地形</option>
+                <option value="河川地形">河川地形</option>
+                <option value="その他の地形">その他の地形</option>
+                <option value="エネルギー">エネルギー</option>
+            </select>
+        </div>
+
+        <div>
+            <label>種類</label>
+            <select id="levelSelect">
+                <option value="all">すべての種類</option>
+                <option value="1">基礎</option>
+                <option value="2">公式</option>
+                <option value="3">実践</option>
+            </select>
+        </div>
+    
+        <div>
+            <label>出題形式</label>
+            <select id="modeSelect">
+                <option value="dha">説明 → 画像 → 答え</option>
+                <option value="da">説明 → 答え</option>
+                <option value="ha">画像 → 答え</option>
+                <option value="ad">答え → 説明</option>
+            </select>
+        </div>
+
+        <button id="shuffleButton" class="random">
+            ランダム
+        </button>
+
+        <div>
+            <label>
+                <label>チェックのみ</label>
+                <input type="checkbox" id="reviewOnly">
+            </label>
+        </div>
+    </div>
+
+        <button id="resetButton" class="reset">
+            <img src="images/reset_arrow.png" alt="reset">
+        </button>
+    
+    <div class="card-container"></div>
+    
+    <script src="earth_card.js"></script>
+    
+    <script src="../script.js"></script>
+    
+</body>
