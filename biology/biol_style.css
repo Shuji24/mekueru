@@ -259,10 +259,7 @@ button {
 @media (max-width: 600px){
 
     .card-container{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        overflow-x: hidden;
     }
     .card{
         width: 90%;
