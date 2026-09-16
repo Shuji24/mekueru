@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>生物 | MekuEru</title>
+    <link rel="stylesheet" href="biol_style.css">
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+
+    <h1 style="line-height: 10px;">生物単語カード</h1>
+    <h3><a href="biol_game.html">ゲームモードへ</a></h3>
+
+    <br>
+    
+    <div class="select">
+        <div>
+            <label>範囲</label>
+            <select id="categorySelect">
+                <option value="all">すべて</option>
+                <option value="遺伝子">遺伝子</option>
+            </select>
+        </div>
+
+        <div>
+            <label>重要度</label>
+            <select id="levelSelect">
+                <option value="all">すべてのレベル</option>
+                <option value="1">基礎</option>
+                <option value="3">重要</option>
+                <option value="2">マニアック</option>
+            </select>
+        </div>
+    
+        <div>
+            <label>出題形式</label>
+            <select id="modeSelect">
+                <option value="dha">説明 → 日本語 → 英語</option>
+                <option value="da">説明 → 英語</option>
+                <option value="ha">日本語 → 英語</option>
+                <option value="ad">英語 → 日本語</option>
+            </select>
+        </div>
+
+        <button id="shuffleButton" class="random">
+            ランダム
+        </button>
+
+        <div>
+            <label>
+                <label>チェックのみ</label>
+                <input type="checkbox" id="reviewOnly">
+            </label>
+        </div>
+    </div>
+
+        <button id="resetButton" class="reset">
+            <img src="images/reset_arrow.png" alt="reset">
+        </button>
+    
+    <div class="card-container"></div>
+    
+    <script src="biol_card.js"></script>
+    
+    <script src="biol_script.js"></script>
+    
+</body>

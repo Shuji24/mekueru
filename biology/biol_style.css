@@ -1,0 +1,271 @@
+body{
+    margin: 0;
+    padding: 30px;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left,#6aa8ff25 0%,transparent 35%),
+        radial-gradient(circle at bottom right,#3478f625 0%,transparent 35%),
+        linear-gradient(135deg,#edf3ff,#f9fbff);
+    font-family: "Segoe UI",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align:center;
+}
+
+/* 横スクロール */
+.card-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    padding:20px;
+}
+
+.card-container::-webkit-scrollbar{
+    height:8px;
+}
+
+.card{
+    width:400px;
+    height:250px;
+    flex-shrink:0;
+    cursor:pointer;
+}
+
+/* カード本体 */
+.card-inner{
+    width:100%;
+    height:100%;
+    display:flex;
+    border-radius:20px;
+    background:rgba(255,255,255,.65);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.6);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    overflow:hidden;
+    transition:
+        transform .35s,
+        box-shadow .35s;
+}
+
+/* 回転 */
+.card-inner.flip{
+    transform:rotateY(90deg);
+}
+
+/* 中身 */
+.card-face{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction: column;
+
+    justify-content:center;
+    text-align: left;
+
+    padding:20px;
+    box-sizing:border-box;
+
+    font-size: 1.2rem;
+}
+
+/* ヒント画像 */
+.card-face img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.card-face h4 {
+    height: 20%;
+    font-size: 1rem;
+    z-index: 50;
+}
+
+/* 答え */
+.card-face h2 {
+    margin:0;
+    font-size:1.5rem;
+}
+
+.card-inner {
+    position: relative;
+    overflow: hidden;
+}
+.card-face::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    transition: width .35s ease;
+    background: rgb(216, 216, 216);
+}
+.card-face.state-0::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 33%;
+    transition: width .35s ease;
+    background: #777777;
+}
+.card-face.state-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 66%;
+    transition: width .35s ease;
+    background: #777777;
+}
+.card-face.state-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    transition: width .35s ease;
+    background: #777777;
+}
+
+.card-face.map.level-1{
+    background: rgb(245,255,245);
+}
+.card-face.map.level-2{
+    background: rgb(235,255,235);
+}
+.card-face.map.level-3{
+    background: rgb(225,255,225);
+}
+
+.card-face.l_terrain.level1{
+    background: rgb(255,245,245);
+}
+.card-face.l_terrain.level-2{
+    background: rgb(255,235,235);
+}
+.card-face.l_terrain.level-3{
+    background: rgb(255,225,225);
+}
+
+.card-face.r_terrain.level-1 {
+    background: rgb(245,245,255);
+}
+.card-face.r_terrain.level-2 {
+    background: rgb(235,235,255);
+}
+.card-face.r_terrain.level-3 {
+    background: rgb(225,225,255);
+}
+
+.card-face.o_terrain.level-1 {
+    background: rgb(240,255,255);
+}
+.card-face.o_terrain.level-2 {
+    background: rgb(225,255,255);
+}
+.card-face.o_terrain.level-3 {
+    background: rgb(210,255,255);
+}
+
+.card-face.energy.level-1 {
+    background: rgb(255,255,240);
+}
+.card-face.energy.level-2 {
+    background: rgb(255,255,225);
+}
+.card-face.energy.level-3 {
+    background: rgb(255,255,210);
+}
+
+.select{
+    display:flex;
+    flex-wrap: wrap;
+    gap:35px;
+    padding:25px 35px;
+    border:none;
+    border-radius:18px;
+    background:rgba(255,255,255,.7);
+    backdrop-filter:blur(12px);
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.08);
+}
+
+select {
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 3.5px solid #3478f6;
+    color: #3478f6;
+}
+button {
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 3.5px solid #3478f6;
+    color: #3478f6;
+}
+.review-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:35px;
+    height:35px;
+    border-radius:25%;
+    background:white;
+    border:2px solid #bbb;
+    cursor:pointer;
+    z-index:100;
+}
+.review-btn.checked{
+    background:#ff5757;
+    border-color:#ff5757;
+}
+.review-btn.checked::after{
+    content:"✓";
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+}
+.reset {
+    height: 65px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.reset img {
+    height: 50px;
+    width: 50px;
+    filter: invert(90%) sepia(99%) saturate(10000%) hue-rotate(215deg)
+}
+
+@media (max-width: 600px){
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    .card{
+        width: 90%;
+        max-width: 400px;
+    }
+}

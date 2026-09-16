@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MekuEru - Game</title>
+    <link rel="stylesheet" href="biol_game.css">
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+
+    <h1 style="line-height: 10px;">地理単語ゲーム</h1>
+    <h3><a href="biology.html">カードモードへ</a></h3>
+
+    <br>
+
+    <div class="select">
+        
+        <div>
+            <label>範囲</label>
+            <select id="categorySelect">
+                <option value="地図">地図</option>
+                <option value="大地形">大地形</option>
+                <option value="河川地形">河川地形</option>
+                <option value="エネルギー">エネルギー</option>
+            </select>
+        </div>
+
+        <div>
+            <label>難易度</label>
+            <select id="levelSelect">
+                <option value="all">すべてのレベル</option>
+                <option value="1">基礎</option>
+                <option value="2">重要</option>
+                <option value="3">マニアック</option>
+            </select>
+        </div>
+
+        <div>
+            <label>クイズ形式</label>
+            <select id="questionMode">
+                <option value="desc">説明 ↔ 答え</option>
+                <option value="hint">画像 ↔ 答え</option>
+            </select>
+        </div>
+
+        <button id="startButton">
+            ゲーム開始
+        </button>
+
+    </div>
+
+    <div id="result"></div>
+
+    <div class="game-container">
+
+        <div id="leftColumn" class="column"></div>
+
+        <div id="rightColumn" class="column"></div>
+
+    </div>
+
+    <script src="geog_card.js"></script>
+    
+    <script src="geog_game.js"></script>
+
+</body>
+</html>
