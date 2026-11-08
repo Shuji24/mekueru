@@ -1328,3 +1328,69 @@ p {
     background: rgba(255,255,255,0.9);
     border-left: 5px solid #B82539;
 }
+
+.add-control {
+    position: absolute;
+    z-index: 50000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn {
+    color: #fff;
+    background: #ff8c00;
+    padding: .3em .5em;
+    border-radius: .3em;
+    text-align: center;
+    display: table;
+    cursor: pinter;
+}
+.btn:hover {
+    cursor: pinter;
+}
+.btn:active {
+    background: #000000;
+}
+.box {
+    background: rgb(239, 234, 234);
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    line-height: 200%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 60vh;
+    border: 2px solid #000000;
+    border-radius: .3em;
+}
+ 
+/* close button */
+.action-close {
+    position: relative;
+    margin-top: 2em;
+}
+.action-close .btn {
+    position: absolute;
+    right: 0;
+    top: -1em;
+}
+.action-close .box {
+    margin-bottom: 2em;
+    border: 5px solid #ff0000;
+}
+ 
+/* checkbox 非表示 */
+.add-control .checkbox {
+    display: none;
+}
+ 
+/* close button's control */
+.add-control .action-close #close:checked ~ .btn {
+    display: none;
+}
+.add-control .action-close #close:checked ~ .box {
+    display: none;
+}
